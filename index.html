@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  <style>
+    @font-face{
+      font-family: myfont;
+      src: url(font.otf);
+    }
+    @font-face{
+      font-family: myfont2;
+      src: url(font2.ttf);
+    }
+    body{
+      background-color: rgba(0,0,0,0.04);
+    }
+    header{
+      border-radius: 10px;
+      width: 95vw;
+      margin: 0px auto;
+      background-color: white;
+      height: 60px;
+    }
+  header img{
+    width:120px;
+    position: relative;
+    top: 5px;
+    left: 0;
+  }
+#cbtn{
+  height: 28px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgba(255,74,140,1);
+  font-family: myfont2;
+  font-weight: 700;
+  position: absolute;
+  right: 8px;
+  top: 25px;
+}
+    #cbtn:hover{
+      background-color: rgba(218,63,120,0.9);
+    }
+
+    h1{
+      margin: 60px auto 20px auto;
+      display:flex;
+      justify-content:center;
+      font-family: myfont;
+    }
+    .container2{
+      text-align: left;
+      border-radius: 10px;
+      background-color: white;
+      padding: 10px;
+      margin: 20px;
+      float: left;
+      flex-direction: column;
+      align-items:center;
+      
+    }
+    p{
+      padding:0px 10px;
+    }
+    #railway, #travel, #human, #heart{
+      font-size: 20px;
+      font-family: myfont;
+      font-weight: bold;
+      border:none;
+      border-radius: 3px;
+      background-color: white;
+    }
+    #railway:hover, #travel:hover, #human:hover, #heart:hover{
+      background-color: #e6e6e6;
+    }
+    footer{
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px 0.1px;
+      width: 90%;
+      height: 35vh;
+      display:flex;
+      flex-direction: column;
+      justify-content:center;
+      align-items:center;
+      text-align:left;
+      padding: 18px;
+      background-color: white;
+    }
+    footer img{
+      width: 150px;
+    }
+    .container{
+      display:flex;
+      justify-content:center;
+      align-items:center;
+    }
+    #news, #videos{
+      margin:50px 20px;
+      height: 35px;
+      width: 70px;
+      border-radius: 5px;
+      border: none;
+      background-color: white;
+      font-family: myfont2;
+      font-weight: 700;
+    }
+  </style>
+  
+
+<body>
+
+<header>
+   <img src="nb2.png" />
+
+<button id="cbtn">Contact the Developer</button>
+</header>
+
+<div class="container">
+  <button id="news">News</button>
+  <button id="videos">Videos</button>
+  
+</div>
+  <hr>
+  <h1>Trending News</h1>
+
+  
+  <div class="container2">
+  <button id="railway" onclick="window.location.href='railway.html'">Railway Update</button>
+  <p>PM Modi to flag off First Amrit Bharat train soon, informs Railways minister Ashwini Vaishnaw</p>
+    </div>
+
+  
+  <div class="container2">
+  <button id="travel" onclick="window.location.href='travel.html'">Travel Alert!</button>
+  <p>Tourists Swamp to manali and other hill stations, leading to huge traffic jam.</p>
+    </div>
+
+  
+  <div class="container2">
+  <button id="human" onclick="window.location.href='human.html'">Human Trafficking</button>
+  <p>Plane caught with Human Trafficking concerns landed in Mumbai</p>
+    </div>
+
+  
+  <div class="container2">
+  <button id="heart" onclick="window.location.href='heart.html'">Tragic Heart Attack</button>
+  <p>14 Year Old boy died with a Heart Attack outside of classroom in Jaipur</p>
+  </div>
+
+  <footer>
+     <img src="nb.png" />
+    <p>Copyright © 2023 Newz Bharat. All rights reserved.</p>
+    <p>Developed by Kira Websteria with love &#9829</p>
+  </footer>
+  
+</body>
+
+</html>
